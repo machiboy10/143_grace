@@ -40,6 +40,8 @@ const createHeartAuto = () => {
     heart.style.left = `${randX}px`
 
     loveMe.appendChild(heart)
+
+    setTimeout(()=> heart.remove(), 5000);
 }
 
 function getRandomInt(min,max) {
